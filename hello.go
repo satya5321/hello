@@ -6,12 +6,12 @@ import {
 }
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
-    response := os.Getenv("RESPONSE"_
+    response := os.Getenv("RESPONSE")
     if len(response) == 0 {
     response = "Hello Openshift for Developers! - Satya"
 }
 
-    fmt.fprintln((w, response)
+    fmt.Fprintln((w, response)
     fmt.Println("Serving an impatient beginner's request.")
 
 }
